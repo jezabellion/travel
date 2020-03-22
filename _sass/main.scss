@@ -1,0 +1,374 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// /*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$black: #000000;
+$brown: #523A4C;
+$grey: #969CA8;
+
+
+$family-sans-serif: 'Source Sans Pro', sans-serif;
+$navbar-item-color: white !important;
+$navbar-item-hover-color: #969CA8 !important;
+$navbar-height: 3rem;
+
+
+
+
+
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";
+
+
+// Bam Bam
+
+@import url('https://fonts.googleapis.com/css?family=Engagement&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+
+
+// Global
+
+body {
+  font-size: 18px !important;
+}
+
+.navbar-burger {
+  color: $black !important;
+}
+
+.modal a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.modal a:hover {
+  opacity: 50%;
+}
+
+
+// Home Page
+
+.home .hero {
+  background-color: white;
+}
+
+.home .hero-image {
+  // background-image: url("../images/shoes.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  // margin: auto 8rem;
+}
+
+
+
+.hidden {
+  visibility: hidden;
+}
+
+// Header image
+
+.shoes{
+  background-image: url("../images/shoes.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.morocco {
+  background-image: url("../images/morocco-thumb.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.istanbul{
+  background-image: url("../images/istanbul-thumb.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.peru {
+  background-image: url("../images/peru-thumb.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.russia {
+  background-image: url("../images/russia-thumb.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.black{
+  background: black;
+}
+
+
+
+
+
+
+
+.hero-body h1,
+.hero-body h2 {
+  color: white;
+}
+
+
+.hero-body h1 {
+font-family: 'Engagement';
+font-size: 150px;
+color: #FFFFFF;
+letter-spacing: -6.25px;
+text-align: center;
+margin-top: -70px;
+}
+
+.home .hero-body h1 {
+  margin-top: auto;
+}
+
+.home .hero-body {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.home .hero-image {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.hero-foot {
+  margin-bottom: 2rem;
+}
+
+.home .hero .tabs ul,
+.hero .hero-foot .tabs ul, {
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
+.hero .hero-foot .tabs ul {
+  padding-top: 3rem;
+}
+
+.hero-foot .hero-body h1 {
+  margin-top: auto;
+}
+
+
+
+
+// Travel Pages
+
+.gallery-image {
+  margin-bottom: 2rem;
+}
+
+.blurb {
+  margin: 8rem 0px;
+}
+
+.blurb p {
+  color: $grey;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+}
+
+.blurb p:first-child {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.blurb p:nth-child(2) {
+  margin: 10px 0px;
+}
+
+.chapter-header {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  }
+
+.chapter-header h2 {
+  color: $grey;
+  text-align: center;
+  font-family: 'Engagement';
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.chapter-header p:nth-child(2) {
+  text-align: center;
+  font-size: 30px;
+  color: $grey;
+}
+
+// bottom nav
+.hero .hero-foot .tabs a {
+  color: $black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.hero .hero-foot .tabs a:hover {
+  color: $grey;
+}
+
+.chapter-close h3 {
+  color: $grey;
+  text-align: center;
+  font-family: 'Engagement';
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 10rem 5rem;
+}
+
+
+// Morocco
+
+.morocco-page .hero-lead {
+  background-image: url("../images/morocco-thumb.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  // border: 6rem white solid;
+  // margin: 5rem !important;
+  // overflow: hidden;
+}
+
+
+
+
+.hero-foot .hero-body {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 1rem !important;
+   }
+   .gallery-image {
+    margin-bottom: 1.5rem;
+   }
+   .blurb {
+     margin: 75px 0px;
+   }
+   .blurb p:first-child {
+     font-size: 1.5rem
+   }
+   .hero-body h1 {
+     font-size: 6rem;
+     letter-spacing: -4px;
+   }
+   .chapter-header {
+     margin-top: 5rem;
+     margin-bottom: 1rem;
+     }
+     .chapter-header h2 {
+       font-size: 4rem;
+       line-height: 4rem;
+     }
+     .chapter-header p:nth-child(2) {
+       font-size: 1.75rem;
+     }
+
+     // Responisve sizes
+     // Home Pages
+
+     .home .hero-image {
+       margin: auto;
+     }
+
+     .navbar-brand {
+       padding: 1rem;
+     }
+
+     .navbar-burger {
+       color: white !important;
+     }
+
+     .home .navbar-burger {
+       color: $black !important;
+     }
+
+     .home .hero-body h1 {
+       // color: red !important;
+       visibility: hidden;
+     }
+
+     .shoes {
+       background-image: url("../images/shoes-portrait.jpg") !important;
+       background-size: cover;
+       background-position: center;
+       margin-left: 1rem;
+       margin-right: 1rem;
+     }
+
+       // Travel Pages
+
+       .chapter-close h3 {
+         font-size: 2rem;
+         line-height: 2rem;
+         margin-top: 3rem;
+         margin-bottom: 5rem;
+       }
+
+   }
+
+
+
+
+
+
+@media screen and (min-width: 769px), print {
+  .has-text-centered-tablet {
+    text-align: center !important; } }
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .has-text-centered-tablet-only {
+    text-align: center !important; } }
+
+@media screen and (max-width: 1023px) {
+  .has-text-centered-touch {
+    text-align: center !important; } }
+
+@media screen and (min-width: 1024px) {
+  .has-text-centered-desktop {
+    text-align: center !important; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .has-text-centered-desktop-only {
+    text-align: center !important; } }
+
+@media screen and (min-width: 1216px) {
+  .has-text-centered-widescreen {
+    text-align: center !important; } }
+
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .has-text-centered-widescreen-only {
+    text-align: center !important; } }
+
+@media screen and (min-width: 1408px) {
+  .has-text-centered-fullhd {
+    text-align: center !important; } }
