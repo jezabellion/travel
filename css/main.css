@@ -6972,55 +6972,11 @@ body {
 .modal a:hover {
   opacity: 50%; }
 
-.home .hero {
-  background-color: white; }
-
-.home .hero-image {
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem; }
-
 .hidden {
   visibility: hidden; }
 
-.shoes {
-  background-image: url("../images/shoes.jpg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem; }
-
-.morocco {
-  background-image: url("../images/morocco-thumb.jpeg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem; }
-
-.istanbul {
-  background-image: url("../images/istanbul-thumb.jpg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem; }
-
-.peru {
-  background-image: url("../images/peru-thumb.jpeg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem; }
-
-.russia {
-  background-image: url("../images/russia-thumb.jpg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem; }
-
-.black {
-  background: black; }
+.home .hero {
+  background-color: white; }
 
 .hero-body h1,
 .hero-body h2 {
@@ -7059,6 +7015,61 @@ body {
 .hero-foot .hero-body h1 {
   margin-top: auto; }
 
+.hero-foot .hero-body {
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+
+.shoes {
+  background-image: url("../images/shoes.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem; }
+
+.morocco {
+  background-image: url("../images/morocco-thumb.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem; }
+
+.istanbul {
+  background-image: url("../images/istanbul-thumb.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem; }
+
+.peru {
+  background-image: url("../images/peru-thumb.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem; }
+
+.russia {
+  background-image: url("../images/russia-thumb.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem; }
+
+.hero .hero-foot .tabs a {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold; }
+
+.hero .hero-foot .tabs a:hover {
+  color: #969CA8; }
+
+.chapter-close h3 {
+  color: #969CA8;
+  text-align: center;
+  font-family: 'Engagement';
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 10rem 5rem; }
+
 .gallery-image {
   margin-bottom: 2rem; }
 
@@ -7095,31 +7106,11 @@ body {
   font-size: 30px;
   color: #969CA8; }
 
-.hero .hero-foot .tabs a {
-  color: #000000;
-  font-size: 1rem;
-  font-weight: bold; }
-
-.hero .hero-foot .tabs a:hover {
-  color: #969CA8; }
-
-.chapter-close h3 {
-  color: #969CA8;
-  text-align: center;
-  font-family: 'Engagement';
-  font-size: 4rem;
-  line-height: 4rem;
-  margin: 10rem 5rem; }
-
 .morocco-page .hero-lead {
   background-image: url("../images/morocco-thumb.jpeg") !important;
   background-size: cover;
   background-position: center;
   color: white; }
-
-.hero-foot .hero-body {
-  padding-top: 8rem;
-  padding-bottom: 8rem; }
 
 @media screen and (max-width: 768px) {
   .container {

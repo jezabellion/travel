@@ -1,11 +1,6 @@
 @charset "utf-8";
 
 // Customization
-
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
-
-// /*
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
@@ -13,23 +8,15 @@ $black: #000000;
 $brown: #523A4C;
 $grey: #969CA8;
 
-
 $family-sans-serif: 'Source Sans Pro', sans-serif;
 $navbar-item-color: white !important;
 $navbar-item-hover-color: #969CA8 !important;
 $navbar-height: 3rem;
 
-
-
-
-
 // 4. Import the rest of Bulma
-
 @import "../node_modules/bulma/bulma";
 
-
 // Bam Bam
-
 @import url('https://fonts.googleapis.com/css?family=Engagement&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
@@ -55,72 +42,18 @@ body {
   opacity: 50%;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+
+
 
 // Home Page
 
 .home .hero {
   background-color: white;
 }
-
-.home .hero-image {
-  // background-image: url("../images/shoes.jpg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem;
-  // margin: auto 8rem;
-}
-
-
-
-.hidden {
-  visibility: hidden;
-}
-
-// Header image
-
-.shoes{
-  background-image: url("../images/shoes.jpg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem;
-}
-.morocco {
-  background-image: url("../images/morocco-thumb.jpeg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem;
-}
-.istanbul{
-  background-image: url("../images/istanbul-thumb.jpg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem;
-}
-.peru {
-  background-image: url("../images/peru-thumb.jpeg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem;
-}
-
-.russia {
-  background-image: url("../images/russia-thumb.jpg") !important;
-  background-size: cover;
-  background-position: center;
-  margin-left: 8rem;
-  margin-right: 8rem;
-}
-.black{
-  background: black;
-}
-
-
-
 
 .hero-body h1,
 .hero-body h2 {
@@ -169,6 +102,69 @@ margin-top: -70px;
   margin-top: auto;
 }
 
+.hero-foot .hero-body {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+// Header images
+.shoes{
+  background-image: url("../images/shoes.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.morocco {
+  background-image: url("../images/morocco-thumb.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.istanbul{
+  background-image: url("../images/istanbul-thumb.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.peru {
+  background-image: url("../images/peru-thumb.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.russia {
+  background-image: url("../images/russia-thumb.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+// bottom nav
+.hero .hero-foot .tabs a {
+  color: $black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.hero .hero-foot .tabs a:hover {
+  color: $grey;
+}
+
+.chapter-close h3 {
+  color: $grey;
+  text-align: center;
+  font-family: 'Engagement';
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 10rem 5rem;
+}
 
 
 
@@ -218,25 +214,6 @@ margin-top: -70px;
   color: $grey;
 }
 
-// bottom nav
-.hero .hero-foot .tabs a {
-  color: $black;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.hero .hero-foot .tabs a:hover {
-  color: $grey;
-}
-
-.chapter-close h3 {
-  color: $grey;
-  text-align: center;
-  font-family: 'Engagement';
-  font-size: 4rem;
-  line-height: 4rem;
-  margin: 10rem 5rem;
-}
 
 
 // Morocco
@@ -246,20 +223,17 @@ margin-top: -70px;
   background-size: cover;
   background-position: center;
   color: white;
-  // border: 6rem white solid;
-  // margin: 5rem !important;
-  // overflow: hidden;
 }
 
 
 
 
-.hero-foot .hero-body {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
 
 
+
+
+
+// Responsive breakpoints
 
 @media screen and (max-width: 768px) {
   .container {
@@ -281,60 +255,60 @@ margin-top: -70px;
    .chapter-header {
      margin-top: 5rem;
      margin-bottom: 1rem;
-     }
-     .chapter-header h2 {
-       font-size: 4rem;
-       line-height: 4rem;
-     }
-     .chapter-header p:nth-child(2) {
-       font-size: 1.75rem;
-     }
-
-     // Responisve sizes
-     // Home Pages
-
-     .home .hero-image {
-       margin: auto;
-     }
-
-     .navbar-brand {
-       padding: 1rem;
-     }
-
-     .navbar-burger {
-       color: white !important;
-     }
-
-     .home .navbar-burger {
-       color: $black !important;
-     }
-
-     .home .hero-body h1 {
-       // color: red !important;
-       visibility: hidden;
-     }
-
-     .shoes {
-       background-image: url("../images/shoes-portrait.jpg") !important;
-       background-size: cover;
-       background-position: center;
-       margin-left: 1rem;
-       margin-right: 1rem;
-     }
-
-       // Travel Pages
-
-       .chapter-close h3 {
-         font-size: 2rem;
-         line-height: 2rem;
-         margin-top: 3rem;
-         margin-bottom: 5rem;
-       }
-
+   }
+   .chapter-header h2 {
+     font-size: 4rem;
+     line-height: 4rem;
+   }
+   .chapter-header p:nth-child(2) {
+     font-size: 1.75rem;
    }
 
 
 
+   // Responisve sizes
+   // Home Pages
+
+   .home .hero-image {
+     margin: auto;
+   }
+
+   .navbar-brand {
+     padding: 1rem;
+   }
+
+   .navbar-burger {
+     color: white !important;
+   }
+
+   .home .navbar-burger {
+     color: $black !important;
+   }
+
+   .home .hero-body h1 {
+     // color: red !important;
+     visibility: hidden;
+   }
+
+   .shoes {
+     background-image: url("../images/shoes-portrait.jpg") !important;
+     background-size: cover;
+     background-position: center;
+     margin-left: 1rem;
+     margin-right: 1rem;
+   }
+
+
+   // Travel Pages
+
+   .chapter-close h3 {
+     font-size: 2rem;
+     line-height: 2rem;
+     margin-top: 3rem;
+     margin-bottom: 5rem;
+   }
+
+}
 
 
 
