@@ -7031,7 +7031,12 @@ body {
   background-size: cover;
   background-position: center;
   margin-left: 8rem;
-  margin-right: 8rem; }
+  margin-right: 8rem;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s; }
 
 .istanbul {
   background-image: url("../images/istanbul-thumb.jpg") !important;
