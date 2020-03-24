@@ -86,50 +86,37 @@
   </body>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
+  <script type="text/javascript">
+      $(document).ready(function() {
 
-// Check for click events on the navbar burger icon
-$(".navbar-burger").click(function() {
-// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-  // $(".navbar-burger").toggleClass("is-active");
-  $(".modal").toggleClass("is-active");
-});
+          // Check for click events on the navbar burger icon
+          $(".navbar-burger").click(function() {
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            // $(".navbar-burger").toggleClass("is-active");
+            $(".modal").toggleClass("is-active");
+          });
 
-$(".modal-close").click(function() {
-
-  $(".modal").toggleClass("is-active");
-
-});
-
-
-
-});
-</script>
+          $(".modal-close").click(function() {
+            // fires mobile nav menu modal
+            $(".modal").toggleClass("is-active");
+          });
 
 
 
+          // image array
+          var image=["morocco","istanbul","peru","russia", "black"];
 
+          $(".list-group li").hover(function(){
+            var value=  $(this).index();
+            hoverContent(value);
+          });
 
+          function hoverContent(value){
+            $("#bg h1").toggleClass('hidden');
+            $("#bg").toggleClass(image[value]);
+          }
 
+      });
 
-
-
-<script type="text/javascript">
-// image array
-var image=["morocco","istanbul","peru","russia", "black"];
-
-$(".list-group li").hover(function(){
-  var value=  $(this).index();
-  hoverContent(value);
-});
-function hoverContent(value){
-  $("#bg h1").toggleClass('hidden');
-  // $("#list-content li").removeClass('show');
-  // $("#list-content li:nth-child("+value+")").addClass("show");
-  // $("#bg").removeClass();
-  $("#bg").toggleClass(image[value]);
-}
-</script>
-
+    </script>
   </html>
