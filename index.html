@@ -103,7 +103,7 @@
 
 
           // image array
-          var image=["morocco","istanbul","peru","russia", "black"];
+          var image=["morocco","istanbul","peru","russia"];
 
           $(".list-group li").hover(function(){
             var value=  $(this).index();
@@ -111,9 +111,11 @@
           });
 
           function hoverContent(value){
+            // removes h1 on other images
             $("#bg h1").toggleClass('hidden');
+            // change images
             $("#bg").toggleClass(image[value]);
-            $("#bg").toggleClass('fade-in');
+            
           }
 
       });
